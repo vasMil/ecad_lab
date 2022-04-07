@@ -1,0 +1,38 @@
+(ExpressProject ""
+  (ProjectType "UNKNOWN")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\custom_library.olb"
+      (Type "Schematic Library"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (Folder "Simulation Resources"
+    (Folder "In Design")
+    (Folder "Compiled")
+    (Folder "Timed"))
+  (GlobalState
+    (Physical 0)
+    (FileView
+      (Path "Design Resources")
+      (Select "Simulation Resources"))
+    (HierarchyView)
+    (Document
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 256 0 619"))
+      (Tab 0))
+    (Document
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 255 1883 0 619")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "0 0")
+        (Zoom "100"))
+      (Path
+         "C:\DOCUMENTS AND SETTINGS\ALL USERS\DESKTOP\ECAD_LAB\LAB2\CUSTOM_LIBRARY\CUSTOM_LIBRARY.OLB")
+      (Package "d_ff"))))
