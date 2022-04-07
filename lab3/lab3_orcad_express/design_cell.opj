@@ -1,0 +1,59 @@
+(ExpressProject "design_cell"
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "C:\ORCADWIN\EXPRESS\LIBRARY\TTL.OLB"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\cell_design.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs"
+    (File ".\cell_design.mnl"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (Folder "Simulation Resources"
+    (Folder "In Design"
+      (File "C:\ORCADWIN\EXPRESS\LIBRARY\LS.VHD"
+        (Type "VHDL SimModel"))
+      (File "C:\ORCADWIN\EXPRESS\LIBRARY\orcomp.vhd"
+        (Type "VHDL SimModel")))
+    (Folder "Compiled"
+      (File "C:\ORCADWIN\EXPRESS\LIBRARY\LS.VHD"
+        (Type "VHDL SimModel"))
+      (File "C:\ORCADWIN\EXPRESS\LIBRARY\orcomp.vhd"
+        (Type "VHDL SimModel")))
+    (Folder "Timed"
+      (File "C:\ORCADWIN\EXPRESS\LIBRARY\LS.VHD"
+        (Type "VHDL SimModel"))
+      (File "C:\ORCADWIN\EXPRESS\LIBRARY\orcomp.vhd"
+        (Type "VHDL SimModel"))))
+  (GlobalState
+    (Physical 0)
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Documents and Settings\All Users\Desktop\ECAD_lab\lab3\lab3_orcad_express\cell_design.dsn")
+      (Path "Design Resources"
+         "C:\Documents and Settings\All Users\Desktop\ECAD_lab\lab3\lab3_orcad_express\cell_design.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Outputs"
+         "C:\Documents and Settings\All Users\Desktop\ECAD_lab\lab3\lab3_orcad_express\cell_design.mnl"))
+    (HierarchyView)
+    (Document
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 0 200 0 737"))
+      (Tab 0))
+    (Document
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 199 1887 -2 738")
+        (Scroll "747 742")
+        (Zoom "100"))
+      (Path
+         "C:\DOCUMENTS AND SETTINGS\ALL USERS\DESKTOP\ECAD_LAB\LAB3\LAB3_ORCAD_EXPRESS\CELL_DESIGN.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
