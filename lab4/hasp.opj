@@ -1,4 +1,4 @@
-(ExpressProject "lab4_hasp"
+(ExpressProject "hasp"
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
@@ -9,7 +9,7 @@
       (File "C:\ORCADWIN\EXPRESS\LIBRARY\CONNECTR.OLB"
         (Type "Schematic Library")))
     (NoModify)
-    (File ".\design1_hasp.dsn"
+    (File ".\hasp_design.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x"))
@@ -17,16 +17,22 @@
   (Folder "Referenced Projects")
   (Folder "Simulation Resources"
     (Folder "In Design"
+      (File "C:\ORCADWIN\EXPRESS\LIBRARY\ACT.VHD"
+        (Type "VHDL SimModel"))
       (File "C:\ORCADWIN\EXPRESS\LIBRARY\TTL.VHD"
         (Type "VHDL SimModel"))
       (File "C:\ORCADWIN\EXPRESS\LIBRARY\orcomp.vhd"
         (Type "VHDL SimModel")))
     (Folder "Compiled"
+      (File "C:\ORCADWIN\EXPRESS\LIBRARY\ACT.VHD"
+        (Type "VHDL SimModel"))
       (File "C:\ORCADWIN\EXPRESS\LIBRARY\TTL.VHD"
         (Type "VHDL SimModel"))
       (File "C:\ORCADWIN\EXPRESS\LIBRARY\orcomp.vhd"
         (Type "VHDL SimModel")))
     (Folder "Timed"
+      (File "C:\ORCADWIN\EXPRESS\LIBRARY\ACT.VHD"
+        (Type "VHDL SimModel"))
       (File "C:\ORCADWIN\EXPRESS\LIBRARY\TTL.VHD"
         (Type "VHDL SimModel"))
       (File "C:\ORCADWIN\EXPRESS\LIBRARY\orcomp.vhd"
@@ -40,15 +46,15 @@
     (Document
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -30 0 200 0 624"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 624"))
       (Tab 0))
     (Document
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -4 -30 44 1740 58 716")
+        (Placement "44 0 1 -1 -1 -4 -30 205 1901 3 661")
         (Scroll "0 0")
         (Zoom "100"))
       (Path
-         "C:\DOCUMENTS AND SETTINGS\TASOS\DESKTOP\ECAD_LAB\LAB4\DESIGN1_HASP.DSN")
+         "C:\Documents and Settings\All Users\Desktop\ecad_lab\lab4\hasp_design.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))
