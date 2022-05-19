@@ -1,4 +1,4 @@
-(ExpressProject "lab1"
+(ExpressProject "lab1_inLab"
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
@@ -30,26 +30,26 @@
       (File ".\indesign\design1.vhd"
         (Type "VHDL Netlist")
         (FromUpdateSimFolder "yes"))
-      (File ".\stimulus.stm"
+      (File ".\indesign\stimulus.stm"
         (Type "Simulate Stimulus"))
-      (Document 5 ".\stimulus.stm"
-        (Window "44 0 1 -1 -1 -1 -1 52 1216 209 550"))
+      (Document 5 ".\indesign\stimulus.stm"
+        (Window "44 0 1 -1 -1 -1 -1 204 1278 2 237"))
       (Document 0
         (Signal "schematic1" "b" 4 0)
         (Signal "schematic1" "a" 4 0)
         (Signal "schematic1" "x" 4 0)
-        (Signal "schematic1" "vcc" 4 0)
         (Signal "schematic1" "gnd" 4 0)
+        (Signal "schematic1" "vcc" 4 0)
         (Signal "schematic1" "orcad_unused" 4 0)
-        (Window "44 0 1 -1 -1 -1 -1 49 1213 46 345"))
+        (Window "44 0 1 -1 -1 -1 -1 66 1140 87 322"))
       (Document 1
         (Signal "schematic1" "b" 4 0)
         (Signal "schematic1" "a" 4 0)
         (Signal "schematic1" "x" 4 0)
-        (Signal "schematic1" "vcc" 4 0)
         (Signal "schematic1" "gnd" 4 0)
+        (Signal "schematic1" "vcc" 4 0)
         (Signal "schematic1" "orcad_unused" 4 0)
-        (Window "44 0 1 -1 -1 -1 -1 72 1236 199 498"))
+        (Window "44 0 1 -1 -1 -1 -1 118 1192 -8 227"))
       (Options
         (AssertBeep 1)
         (AssertLog 1)
@@ -59,8 +59,7 @@
         (BreakLog 1)
         (BreakMessage 1)
         (BreakStop 1)
-        (FileOpen
-           "C:\Documents and Settings\Administrator\Desktop\ask4\ask4_sim")
+        (FileOpen "C:\antonis")
         (InstructionStep 1)
         (InteractiveUpdate 0)
         (ITCEnabled 0)
@@ -118,30 +117,31 @@
         (Type "VHDL Netlist")
         (FromUpdateSimFolder "yes")))
     (DefaultFolder "In Design")
-    (LastModified "Thu May 19 09:30:58 2022"))
+    (LastModified "Thu May 19 10:37:25 2022"))
   (GlobalState
     (Physical 1)
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources" "E:\ECAD\lab1\design1.dsn")
-      (Path "Design Resources" "E:\ECAD\lab1\design1.dsn" "SCHEMATIC1")
+      (Path "Design Resources" "E:\ECAD\lab1_inLab\design1.dsn")
+      (Path "Design Resources" "E:\ECAD\lab1_inLab\design1.dsn" "SCHEMATIC1")
       (Path "Outputs")
       (Path "Simulation Resources")
-      (Path "Simulation Resources" "In Design")
-      (Path "Simulation Resources" "Compiled")
-      (Path "Simulation Resources" "Timed"))
-    (HierarchyView)
+      (Select "Design Resources" "E:\ECAD\lab1_inLab\design1.dsn" "SCHEMATIC1"
+         "PAGE1"))
+    (HierarchyView
+      (Path "SCHEMATIC1")
+      (Select "SCHEMATIC1"))
     (Document
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -30 -3 377 -1 691"))
-      (Tab 0))
+        (Placement "44 0 1 -1 -1 -1 -1 -6 194 -2 464"))
+      (Tab 1))
     (Document
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 366 1117 2 320")
-        (Scroll "407 285")
+        (Placement "44 0 1 -1 -1 -1 -1 198 1066 25 260")
+        (Scroll "0 130")
         (Zoom "100"))
-      (Path "E:\ECAD\LAB1\DESIGN1.DSN")
+      (Path "E:\ECAD\LAB1_INLAB\DESIGN1.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "Standard"))))
+      (Page "PAGE1"))))

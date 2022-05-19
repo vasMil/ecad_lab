@@ -34,13 +34,12 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Documents and Settings\All Users\Desktop\ECAD_lab\lab3\lab3_orcad_express\cell_design.dsn")
+         "E:\ECAD\lab3\lab3_orcad_express\cell_design.dsn")
       (Path "Design Resources"
-         "C:\Documents and Settings\All Users\Desktop\ECAD_lab\lab3\lab3_orcad_express\cell_design.dsn"
-         "SCHEMATIC1")
+         "E:\ECAD\lab3\lab3_orcad_express\cell_design.dsn" "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Outputs"
-         "C:\Documents and Settings\All Users\Desktop\ECAD_lab\lab3\lab3_orcad_express\cell_design.mnl"))
+      (Select "Design Resources"
+         "E:\ECAD\lab3\lab3_orcad_express\cell_design.dsn" "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Document
       (Type "COrCapturePMDoc")
@@ -50,10 +49,9 @@
     (Document
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -4 -30 199 1887 -2 738")
-        (Scroll "747 742")
-        (Zoom "100"))
-      (Path
-         "C:\DOCUMENTS AND SETTINGS\ALL USERS\DESKTOP\ECAD_LAB\LAB3\LAB3_ORCAD_EXPRESS\CELL_DESIGN.DSN")
+        (Placement "44 0 1 -1 -1 -4 -30 200 1119 -5 559")
+        (Scroll "90 0")
+        (Zoom "36"))
+      (Path "E:\ECAD\LAB3\LAB3_ORCAD_EXPRESS\CELL_DESIGN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))
