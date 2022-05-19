@@ -2,16 +2,19 @@ LIBRARY IEEE;
 USE IEEE.std_logic_1164.all;
 ENTITY SCHEMATIC1 IS PORT (
 	PCLK : IN std_logic;
-	PD0 : IN std_logic;
-	PD1 : IN std_logic;
+	DIN0 : OUT std_logic;
+	PD0 : INOUT std_logic;
+	PD1 : INOUT std_logic;
 	PREn : IN std_logic;
-	PD2 : IN std_logic;
-	PD3 : IN std_logic;
-	PD4 : IN std_logic;
-	PD5 : IN std_logic;
-	PD6 : IN std_logic;
-	PD7 : IN std_logic;
-	PWEn : IN std_logic
+	PD2 : INOUT std_logic;
+	PD3 : INOUT std_logic;
+	PD4 : INOUT std_logic;
+	U1_Q1 : OUT std_logic;
+	PD5 : INOUT std_logic;
+	u2_pd0 : OUT std_logic;
+	PD6 : INOUT std_logic;
+	PWEn : IN std_logic;
+	PD7 : INOUT std_logic
 ); END SCHEMATIC1;
 
 
@@ -87,29 +90,29 @@ COMPONENT \74ACT283\
 -- SIGNALS
 
 SIGNAL orcad_unused:std_logic;
-SIGNAL N00460 : std_logic;
 SIGNAL N04838 : std_logic;
+SIGNAL N00460 : std_logic;
 SIGNAL N02944 : std_logic;
-SIGNAL GND : std_logic;
-SIGNAL N11912 : std_logic;
-SIGNAL N12795 : std_logic;
-SIGNAL N13811 : std_logic;
+SIGNAL N05487 : std_logic;
+SIGNAL N05431 : std_logic;
+SIGNAL N05376 : std_logic;
+SIGNAL N06670 : std_logic;
+SIGNAL N06596 : std_logic;
+SIGNAL N06244 : std_logic;
 SIGNAL N06176 : std_logic;
 SIGNAL N06109 : std_logic;
 SIGNAL N06043 : std_logic;
 SIGNAL N05782 : std_logic;
 SIGNAL N06821 : std_logic;
 SIGNAL N06745 : std_logic;
-SIGNAL N09476 : std_logic;
 SIGNAL N09050 : std_logic;
-SIGNAL N10195 : std_logic;
-SIGNAL N09976 : std_logic;
-SIGNAL N09760 : std_logic;
-SIGNAL N11152 : std_logic;
 SIGNAL N14220 : std_logic;
-SIGNAL N11681 : std_logic;
-SIGNAL N11377 : std_logic;
-SIGNAL VCC : std_logic;
+SIGNAL N02275 : std_logic;
+SIGNAL N02701 : std_logic;
+SIGNAL N02169 : std_logic;
+SIGNAL N02818 : std_logic;
+SIGNAL N02194 : std_logic;
+SIGNAL N04248 : std_logic;
 SIGNAL N04735 : std_logic;
 SIGNAL N04677 : std_logic;
 SIGNAL N04578 : std_logic;
@@ -120,25 +123,7 @@ SIGNAL N05721 : std_logic;
 SIGNAL N05661 : std_logic;
 SIGNAL N05602 : std_logic;
 SIGNAL N05544 : std_logic;
-SIGNAL N05487 : std_logic;
-SIGNAL N05431 : std_logic;
-SIGNAL N05376 : std_logic;
-SIGNAL N06670 : std_logic;
-SIGNAL N06596 : std_logic;
-SIGNAL N06244 : std_logic;
-SIGNAL N02818 : std_logic;
-SIGNAL N02628 : std_logic;
-SIGNAL N02194 : std_logic;
-SIGNAL N03860 : std_logic;
-SIGNAL N03816 : std_logic;
-SIGNAL N04145 : std_logic;
-SIGNAL N04095 : std_logic;
-SIGNAL N04046 : std_logic;
-SIGNAL N03998 : std_logic;
-SIGNAL N03951 : std_logic;
-SIGNAL N03905 : std_logic;
-SIGNAL N04248 : std_logic;
-SIGNAL N04196 : std_logic;
+SIGNAL N02859 : std_logic;
 SIGNAL N02901 : std_logic;
 SIGNAL N02220 : std_logic;
 SIGNAL N02122 : std_logic;
@@ -148,10 +133,28 @@ SIGNAL N02088 : std_logic;
 SIGNAL N02664 : std_logic;
 SIGNAL N02145 : std_logic;
 SIGNAL N02778 : std_logic;
-SIGNAL N02275 : std_logic;
-SIGNAL N02701 : std_logic;
-SIGNAL N02169 : std_logic;
-SIGNAL N02859 : std_logic;
+SIGNAL N10195 : std_logic;
+SIGNAL N09476 : std_logic;
+SIGNAL N11681 : std_logic;
+SIGNAL N03905 : std_logic;
+SIGNAL N04095 : std_logic;
+SIGNAL N03816 : std_logic;
+SIGNAL N09976 : std_logic;
+SIGNAL N09760 : std_logic;
+SIGNAL N03951 : std_logic;
+SIGNAL N12795 : std_logic;
+SIGNAL N04145 : std_logic;
+SIGNAL N11377 : std_logic;
+SIGNAL N02628 : std_logic;
+SIGNAL N13890 : std_logic;
+SIGNAL VCC_BAR : std_logic;
+SIGNAL VCC : std_logic;
+SIGNAL N11912 : std_logic;
+SIGNAL N03998 : std_logic;
+SIGNAL N11152 : std_logic;
+SIGNAL N03860 : std_logic;
+SIGNAL N04046 : std_logic;
+SIGNAL GND : std_logic;
 
 -- INSTANCE ATTRIBUTES
 
@@ -161,6 +164,8 @@ SIGNAL N02859 : std_logic;
 -- GATE INSTANCES
 
 BEGIN
+U1_Q1<=N09476;
+U2_PD0<=N02628;
 U1 : \74ACT175\	PORT MAP(
 	D1 => N03816, 
 	D2 => N03860, 
@@ -184,9 +189,9 @@ U2 : \74ACT244\	PORT MAP(
 	\2A2\ => N02818, 
 	\2A3\ => N02859, 
 	\2A4\ => N02901, 
-	\1G\ => N13811, 
-	\2G\ => N13811, 
-	\1Y1\ => N04196, 
+	\1G\ => N13890, 
+	\2G\ => N13890, 
+	\1Y1\ => DIN0, 
 	\1Y2\ => N04248, 
 	\1Y3\ => N04301, 
 	\1Y4\ => N04355, 
@@ -202,7 +207,7 @@ U3 : \74ACT283\	PORT MAP(
 	A2 => N09760, 
 	A3 => N09976, 
 	A4 => N10195, 
-	B1 => VCC, 
+	B1 => VCC_BAR, 
 	B2 => GND, 
 	B3 => GND, 
 	B4 => GND, 
@@ -259,7 +264,7 @@ U6 : \74ACT283\	PORT MAP(
 	B1 => GND, 
 	B2 => GND, 
 	B3 => GND, 
-	B4 => VCC, 
+	B4 => VCC_BAR, 
 	C0 => N09050, 
 	S1 => N06596, 
 	S2 => N06670, 
@@ -274,7 +279,7 @@ U7 : \74ACT244\	PORT MAP(
 	\1A3\ => PREN, 
 	\1G\ => GND, 
 	\2G\ => GND, 
-	\1Y1\ => N13811, 
+	\1Y1\ => N13890, 
 	\1Y2\ => N12795, 
 	\1Y3\ => N14220, 
 	VCC => VCC, 
